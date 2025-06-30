@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Atom, Magnet, Clock, Zap, Home, ChevronRight, Play } from 'lucide-react';
+import { BookOpen, Atom, Magnet, Clock, Zap, Home, ChevronRight, Play, Lightbulb } from 'lucide-react';
 import SimulationsHub from './components/SimulationsHub';
 import TableOfContents from './components/TableOfContents';
 import ChapterOne from './components/ChapterOne';
@@ -8,6 +8,7 @@ import ChapterThree from './components/ChapterThree';
 import ChapterFour from './components/ChapterFour';
 import ChapterFive from './components/ChapterFive';
 import Epilogue from './components/Epilogue';
+import EinsteinTime from './components/EinsteinTime';
 import ParticleBackground from './components/ParticleBackground';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   const chapters = [
     { id: 'simulations', title: 'Simulações 3D', icon: Play, component: SimulationsHub },
     { id: 'toc', title: 'Índice', icon: Home, component: TableOfContents },
+    { id: 'einstein', title: 'O Tempo de Einstein', icon: Lightbulb, component: EinsteinTime },
     { id: 'chapter1', title: 'Introdução ao Tempo Atômico', icon: Atom, component: ChapterOne },
     { id: 'chapter2', title: 'Tempo Nuclear', icon: Zap, component: ChapterTwo },
     { id: 'chapter3', title: 'Tempo Magnético', icon: Magnet, component: ChapterThree },
