@@ -121,13 +121,51 @@ function App() {
 
       {/* Footer */}
       <footer className="relative z-20 mt-16 p-6 border-t border-purple-500/30 backdrop-blur-sm bg-black/20">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-purple-300 text-sm">
-            "No fundo, tudo é vibração que não sabemos ver."
-          </p>
-          <p className="text-purple-500 text-xs mt-2">
-            © 2025 - Enciclopédia Filosófico-Científica
-          </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-6">
+            <p className="text-purple-300 text-sm">
+              "No fundo, tudo é vibração que não sabemos ver."
+            </p>
+            <p className="text-purple-500 text-xs mt-2">
+              © 2025 - Enciclopédia Filosófico-Científica
+            </p>
+          </div>
+          
+          <div className="border-t border-purple-500/20 pt-4 mt-4">
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <div className="mb-4 md:mb-0">
+                <h3 className="text-sm font-medium text-purple-400 mb-1">Desenvolvido por</h3>
+                <p className="text-white text-sm font-semibold">Julio Campos Machado</p>
+                <p className="text-purple-300 text-xs">Full Stack Developer</p>
+              </div>
+              
+              <div className="mb-4 md:mb-0 text-center">
+                <h3 className="text-sm font-medium text-purple-400 mb-1">Empresa</h3>
+                <p className="text-white text-sm font-semibold">Like Look Solutions</p>
+                <a 
+                  href="https://likelook.wixsite.com/solutions" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-purple-300 text-xs hover:text-purple-200 transition-colors"
+                >
+                  likelook.wixsite.com/solutions
+                </a>
+              </div>
+              
+              <div>
+                <h3 className="text-sm font-medium text-purple-400 mb-1">Contato</h3>
+                <p className="text-white text-xs mb-1">
+                  <span className="font-medium">WhatsApp:</span> +5511970603441 / +5511992946628
+                </p>
+                <a 
+                  href="mailto:juliocamposmachado@gmail.com" 
+                  className="text-purple-300 text-xs hover:text-purple-200 transition-colors"
+                >
+                  juliocamposmachado@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
